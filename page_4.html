@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contacto</title>
+</head>
+<body id="pages">
+    <nav class="navbar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./page_2.html">Acerca de...</a></li>
+            <li><a href="./page_3.html">Productos</a></li>
+            <li><a href="./page_4.html">Contacto</a></li>
+          </ul>
+    </nav>
+    <div class="imgs_4">
+        <img src="./img/ofic1.jpg">
+        <img src="./img/ofic2.jpg">
+        <img src="./img/ofic3.jpg" style="object-position: 65% 0;">
+    </div>
+    <div class="desc_4">
+        <h1>Contacto</h1>
+        <div>
+            <h2>Direccion</h2>
+            <p>123 Anywhere St., Zapopan, Jalisco, Mexico 12345</p>
+        </div>
+        <div>
+            <h2>Correo Electronico</h2>
+            <p>contacto@offshop.com</p>
+        </div>
+        <div>
+            <h2>Telefono</h2>
+            <p>(123) 456 7890</p>
+        </div>
+        <form>
+            <ul>
+                <li>
+                    <h2>Contactanos!</h2>
+                </li>
+                <li>
+                    <label for="name">Nombre</label>
+                    <br>
+                    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+                </li>
+                <li>
+                    <label for="email">E-mail</label>
+                    <br>
+                    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                </li>
+                <li>
+                    <label for="phone">Telefono</label>
+                    <br>
+                    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </li>
+                <li>
+                    <label for="message">Comentarios</label>
+                    <br>
+                    <textarea id="message" name="visitor_message" placeholder="Comentarios." required></textarea>
+                </li>
+                <li>
+                    <button type="submit">Enviar!</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
